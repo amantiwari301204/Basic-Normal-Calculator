@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator" id="calculator">
+        <div class="inputText">
+            <input type="text" id="input" disabled>
+            <button class="backspace" id="backclear"><img src="delete.png" alt="" onclick="backClear()"></button>
+        </div>
+        <div class="buttons">
+        <div>
+            <button id="digit" onclick="addText('(')">(</button>
+            <button id="digit" onclick="addText(')')">)</button>
+            <button id="digit" onclick="addText('%')">%</button>
+            <button id="clear" onclick="clearText('AC')"style="background-color: orangered; color: aliceblue" title="Alt+x"><span>AC</span></button>
+        </div>
+        <!-- <br> -->
+        <div>
+            <button id="digit" onclick="addText('9')">9</button>
+            <button id="digit" onclick="addText('8')">8</button>
+            <button id="digit" onclick="addText('7')">7</button>
+            <button id="digit" onclick="addText('/')">÷</button>
+        </div>
+        <!-- <br> -->
+        <div>
+            <button id="digit" onclick="addText('6')">6</button>
+            <button id="digit" onclick="addText('5')">5</button>
+            <button id="digit" onclick="addText('4')">4</button>
+            <button id="digit" onclick="addText('*')">x</button>
+        </div>
+        <!-- <br> -->
+        <div>
+            <button id="digit"onclick="addText('3')">3</button>
+            <button id="digit" onclick="addText('2')">2</button>
+            <button id="digit" onclick="addText('1')">1</button>
+            <button id="digit" onclick="addText('-')">-</button>
+        </div>
+        <!-- <br> -->
+        <div>
+            <button id="digit" onclick="addText('0')">0</button>
+            <button id="digit" onclick="addText('.')">.</button>
+            <button id="equal" style="background-color: royalblue; color: aliceblue;">=</button>
+            <button id="digit" onclick="addText('+')">+</button>
+        </div>
+        <!-- <br> -->
+        </div>
+
+    </div>
+</body>
+<script src="script.js" type="module"></script>
+</html>
